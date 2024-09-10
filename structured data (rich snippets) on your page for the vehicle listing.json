@@ -1,0 +1,73 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Car",
+  "name": "Lynk & Co 01 1.5 Bijna Nieuwe SUV met Resterende Fabrieksgarantie!",
+
+  // Priority on high-quality images with at least 1200px width.
+  // Exterior shots should come first (front, side, rear views).
+  // Then include 1-2 key interior shots (dashboard, seating).
+  "image": [
+    "https://subarustoredoesburg.ams3.cdn.digitaloceanspaces.com/39939855/16005970484-39939855-1.jpg", 
+    "https://subarustoredoesburg.ams3.cdn.digitaloceanspaces.com/39939855/15928589510-39939855-2.jpg", 
+    "https://subarustoredoesburg.ams3.cdn.digitaloceanspaces.com/39939855/15928589511-39939855-3.jpg", 
+    "https://subarustoredoesburg.ams3.cdn.digitaloceanspaces.com/39939855/15928589512-39939855-4.jpg", 
+    "https://subarustoredoesburg.ams3.cdn.digitaloceanspaces.com/39939855/15928589513-39939855-5.jpg", 
+    "https://subarustoredoesburg.ams3.cdn.digitaloceanspaces.com/39939855/15928589514-39939855-6.jpg"
+  ],
+
+  // URL of the page listing the vehicle
+  "url": "https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2023/01/1-5/18030km/39939855",
+
+  // Offer details for this vehicle
+  "offers": {
+    "@type": "Offer",
+    "price": "30000",  // Price of the vehicle in EUR
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock"  // Vehicle is in stock
+  },
+
+  "itemCondition": "https://schema.org/UsedCondition",  // Car is a used vehicle
+
+  // Brand information
+  "brand": {
+    "@type": "Brand",
+    "name": "Lynk & Co"
+  },
+
+  // Model and configuration of the vehicle
+  "model": "01",
+  "vehicleConfiguration": "1.5",
+  "vehicleModelDate": 2023,  // Model year
+
+  // Mileage information
+  "mileageFromOdometer": {
+    "@type": "QuantitativeValue",
+    "value": "20170",  // Mileage in kilometers
+    "unitCode": "KMT"  // Unit code for kilometers
+  },
+
+  // Optional VIN field: VINs should be exactly 17 characters.
+  // If the VIN is not easily available, it's better to leave this field empty.
+  // "vehicleIdentificationNumber": "",
+
+  // Color and interior information
+  "color": "Blauw",  // Vehicle color (blue)
+  "vehicleInteriorColor": "Stof",  // Interior color (fabric)
+  "vehicleInteriorType": "Stof",  // Interior material
+
+  // Vehicle type
+  "bodyType": "SUV",  // Body style (SUV)
+  "vehicleEngine": {
+    "@type": "EngineSpecification",
+    "fuelType": "Benzine_Elektrisch"  // Hybrid engine: gasoline and electric
+  },
+
+  // Transmission and seating details
+  "vehicleTransmission": "Automaat",  // Transmission type (automatic)
+  "numberOfDoors": 5,  // Number of doors
+  "vehicleSeatingCapacity": 5,  // Number of seats
+
+  // Optional field: 'driveWheelConfiguration' can be "Front-wheel drive", "All-wheel drive", etc.
+  // It's important to include this if known, but can be left out if not easily available.
+  "driveWheelConfiguration": "Front-wheel drive"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Vehicle Listings</title>
+    <link>https://www.experiencestoredoesburg.nl/</link>
+    <description>Vehicle listings feed for Google Merchant Center</description>
+
+    <item>
+        <g:id>40109258</g:id>
+        <g:title>Lynk & Co 01 1.5 De Perfecte Mix van Stijl, Innovatie en Efficiëntie</g:title>
+        <g:price>27000.00 EUR</g:price>
+        <g:condition>used</g:condition>
+        <g:image_link>https://subarustoredoesburg.ams3.cdn.digitaloceanspaces.com/40109258/16014897390-40109258-4.jpg</g:image_link>
+        <g:link>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/</g:link>
+        <g:google_product_category>916</g:google_product_category>
+        <g:brand>Lynk & Co</g:brand>
+        <g:model>0.1</g:model>
+        <g:trim>1.5</g:trim>
+        <g:color>zwart</g:color>
+        <g:mileage>12,540 km</g:mileage>
+        <g:date_first_registered>2022-10</g:date_first_registered>
+        <g:vehicle_fulfillment>
+            <g:option>in_store:11279812714946237556</g:option>
+        </g:vehicle_fulfillment>
+    </item>
+    
+  </channel>
+</rss>

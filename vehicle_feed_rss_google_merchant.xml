@@ -10,8 +10,6 @@
         <g:title>Lynk & Co 01 1.5 De Perfecte Mix van Stijl, Innovatie en Efficiëntie</g:title>
         <g:price>27000.00 EUR</g:price>
         <g:condition>used</g:condition>
-        <g:image_link>https://subarustoredoesburg.ams3.cdn.digitaloceanspaces.com/40109258/16014897390-40109258-4.jpg</g:image_link>
-        <g:link>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/</g:link>
         <g:google_product_category>916</g:google_product_category>
         <g:brand>Lynk & Co</g:brand>
         <g:model>0.1</g:model>
@@ -19,10 +17,15 @@
         <g:color>zwart</g:color>
         <g:mileage>12,540 km</g:mileage>
         <g:date_first_registered>2022-10</g:date_first_registered>
+        <g:image_link>https://subarustoredoesburg.ams3.cdn.digitaloceanspaces.com/40109258/16014897390-40109258-4.jpg</g:image_link>
+        <g:link>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/</g:link>
         <g:vehicle_fulfillment>
             <g:option>in_store:11279812714946237556</g:option>
         </g:vehicle_fulfillment>
+        <g:link_template>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/?store={in_store:11279812714946237556}</g:link_template>
     </item>
     
+    <!-- Repeat the <item> block for additional vehicles -->
+
   </channel>
 </rss>

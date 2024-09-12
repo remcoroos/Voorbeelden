@@ -5,6 +5,9 @@
     <link>https://www.experiencestoredoesburg.nl/</link>
     <description>Vehicle listings feed for Google Merchant Center</description>
 
+    <!-- Instruction: Currently, this feed contains only one vehicle. To include additional vehicles, 
+         add more <item> elements below with the same required fields (g:id, g:price, g:condition, etc.) for each new vehicle. -->
+    
     <item>
         <!-- id: Required and must be visible on the landing page, in metadata or in URL -->
         <g:id>40109258</g:id>
@@ -18,13 +21,13 @@
         <!-- condition: Required, values can be new or used -->
         <g:condition>used</g:condition>
 
-        <!-- image_link: Required -->
+        <!-- image_link: Required, no watermarks, no superimposed logos or text, no placeholder images, no offensive content, full product view, minimal background clutter -->
         <g:image_link>https://subarustoredoesburg.ams3.cdn.digitaloceanspaces.com/40109258/16014897390-40109258-4.jpg</g:image_link>
 
         <!-- link: Required for online offers. It provides the URL to the specific vehicle description page on your website -->
         <g:link>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/</g:link>
 
-        <!-- google_product_category: Required -->
+        <!-- google_product_category: Required, the value can be fixed at 916 since it covers a wide range of vehicle types -->
         <g:google_product_category>916</g:google_product_category>
 
         <!-- brand: Required -->
@@ -46,13 +49,16 @@
         <g:date_first_registered>2022-10</g:date_first_registered>
 
         <!-- vehicle fulfillment: Required. If the same vehicle is available at two locations, use in_store:store_code1:store_code2 -->
+        <!-- Store code refers to the code from Google Business Profile, where it is labeled as "Shop code". If multiple locations are involved, this store_code can change because different cars can be located at different locations; otherwise, it remains fixed -->
         <g:vehicle_fulfillment>
             <g:option>in_store:11279812714946237556</g:option>
         </g:vehicle_fulfillment>
 
-        <!-- link_template: Required for in-store and ship-to-store offers. Must include {store_code} ValueTrack parameter -->
+        <!-- link_template: Required for in-store and ship-to-store offers. Must include {store_code} ValueTrack parameter, which should be fixed at the end of every URL -->
         <g:link_template>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/?store={store_code}</g:link_template>
     </item>
+
+    <!-- Add more <item> elements here for additional vehicles -->
     
   </channel>
 </rss>

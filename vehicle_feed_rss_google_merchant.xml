@@ -12,7 +12,7 @@
         <!-- titel: Optional -->
         <g:title>Lynk & Co 01 1.5 De Perfecte Mix van Stijl, Innovatie en Efficiëntie</g:title>
 
-        <!-- price: Required, format: number.currency (e.g., 22000.00 EUR) without thousand separators, price must match with price on VDP -->
+        <!-- price: Required, format: number.currency (e.g., 27000.00 EUR) without thousand separators, price must match with price on VDP -->
         <g:price>27000.00 EUR</g:price>
 
         <!-- condition: Required, values can be new or used -->
@@ -46,7 +46,6 @@
         <g:date_first_registered>2022-10</g:date_first_registered>
 
         <!-- vehicle fulfillment: Required. If the same vehicle is available at two locations, use in_store:store_code1:store_code2 -->
-        <!-- Store code refers to the code from Google Business Profile, where it is labeled as "Shop code" -->
         <g:vehicle_fulfillment>
             <g:option>in_store:11279812714946237556</g:option>
         </g:vehicle_fulfillment>

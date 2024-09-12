@@ -6,23 +6,53 @@
     <description>Vehicle listings feed for Google Merchant Center</description>
 
     <item>
+        <!-- id: Required and must be visible on the landing page, in metadata or in URL -->
         <g:id>40109258</g:id>
+
+        <!-- titel: Optional -->
         <g:title>Lynk & Co 01 1.5 De Perfecte Mix van Stijl, Innovatie en Efficiëntie</g:title>
+
+        <!-- price: Required, format: number.currency (e.g., 22000.00 EUR) without thousand separators, price must match with price on VDP -->
         <g:price>27000.00 EUR</g:price>
+
+        <!-- condition: Required, values can be new or used -->
         <g:condition>used</g:condition>
-        <g:google_product_category>916</g:google_product_category>
-        <g:brand>Lynk & Co</g:brand>
-        <g:model>0.1</g:model>
-        <g:trim>1.5</g:trim>
-        <g:color>zwart</g:color>
-        <g:mileage>12,540 km</g:mileage>
-        <g:date_first_registered>2022-10</g:date_first_registered>
+
+        <!-- image_link: Required -->
         <g:image_link>https://subarustoredoesburg.ams3.cdn.digitaloceanspaces.com/40109258/16014897390-40109258-4.jpg</g:image_link>
+
+        <!-- link: Required for online offers. It provides the URL to the specific vehicle description page on your website -->
         <g:link>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/</g:link>
+
+        <!-- google_product_category: Required -->
+        <g:google_product_category>916</g:google_product_category>
+
+        <!-- brand: Required -->
+        <g:brand>Lynk & Co</g:brand>
+
+        <!-- model: Required -->
+        <g:model>0.1</g:model>
+
+        <!-- trim: Required -->
+        <g:trim>1.5</g:trim>
+
+        <!-- color: Required -->
+        <g:color>zwart</g:color>
+
+        <!-- mileage: Required, thousands comma-separated, with space km -->
+        <g:mileage>12,540 km</g:mileage>
+
+        <!-- date_first_registered: Required, in YYYY-MM format -->
+        <g:date_first_registered>2022-10</g:date_first_registered>
+
+        <!-- vehicle fulfillment: Required. If the same vehicle is available at two locations, use in_store:store_code1:store_code2 -->
+        <!-- Store code refers to the code from Google Business Profile, where it is labeled as "Shop code" -->
         <g:vehicle_fulfillment>
             <g:option>in_store:11279812714946237556</g:option>
         </g:vehicle_fulfillment>
-        <g:link_template>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/?store=in_store:11279812714946237556</g:link_template>
+
+        <!-- link_template: Required for in-store and ship-to-store offers. Must include {store_code} ValueTrack parameter -->
+        <g:link_template>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/?store={store_code}</g:link_template>
     </item>
     
   </channel>

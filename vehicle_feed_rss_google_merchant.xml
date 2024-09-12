@@ -22,10 +22,8 @@
         <g:vehicle_fulfillment>
             <g:option>in_store:11279812714946237556</g:option>
         </g:vehicle_fulfillment>
-        <g:link_template>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/?store={in_store:11279812714946237556}</g:link_template>
+        <g:link_template>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/?store=in_store:11279812714946237556</g:link_template>
     </item>
     
-    <!-- Repeat the <item> block for additional vehicles -->
-
   </channel>
 </rss>

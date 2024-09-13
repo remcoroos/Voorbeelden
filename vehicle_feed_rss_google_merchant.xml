@@ -12,7 +12,7 @@
         <!-- id: Required and must be visible on the landing page, in metadata or in URL -->
         <g:id>40109258</g:id>
 
-        <!-- titel: Optional -->
+        <!-- title: Optional -->
         <g:title>Lynk & Co 01 1.5 De Perfecte Mix van Stijl, Innovatie en Efficiëntie</g:title>
 
         <!-- price: Required, format: number.currency (e.g., 27000.00 EUR) without thousand separators, price must match with price on VDP -->
@@ -48,11 +48,31 @@
         <!-- date_first_registered: Required, in YYYY-MM format -->
         <g:date_first_registered>2022-10</g:date_first_registered>
 
-        <!-- vehicle fulfillment: Required. If the same vehicle is available at two locations, use in_store:store_code1:store_code2 -->
-        <!-- Store code refers to the code from Google Business Profile, where it is labeled as "Shop code". If multiple locations are involved, this store_code can change because different cars can be located at different locations; otherwise, it remains fixed -->
+        <!-- vehicle fulfillment: Required. The vehicle is only available at a single store. -->
         <g:vehicle_fulfillment>
-            <g:option>in_store:11279812714946237556</g:option>
+            <g:option>in_store</g:option>
+            <g:store_code>11279812714946237556</g:store_code>
         </g:vehicle_fulfillment>
+
+        <!-- Instruction: Store code refers to the code from Google Business Profile, where it is labeled as "Shop code". 
+        If multiple locations are involved, this store_code can change because different cars can be located at different locations; 
+        otherwise, it remains fixed. -->
+
+        <!-- Instruction: To add online availability, use the following structure: -->
+        <!-- 
+        <g:vehicle_fulfillment>
+            <g:option>online</g:option>
+        </g:vehicle_fulfillment>
+        -->
+
+        <!-- Instruction: To add multiple store locations, use the following structure: -->
+        <!-- 
+        <g:vehicle_fulfillment>
+            <g:option>in_store</g:option>
+            <g:store_code>1111</g:store_code>
+            <g:store_code>2222</g:store_code>
+        </g:vehicle_fulfillment>
+        -->
 
         <!-- link_template: Required for in-store and ship-to-store offers. Must include {store_code} ValueTrack parameter, which should be fixed at the end of every URL -->
         <g:link_template>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/?store={store_code}</g:link_template>

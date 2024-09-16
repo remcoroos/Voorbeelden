@@ -29,7 +29,7 @@
         <!-- link: Verplicht voor online aanbiedingen. Dit geeft de URL naar de specifieke voertuigbeschrijvingspagina op uw website -->
         <link>https://www.experiencestoredoesburg.nl/gebruikt/lynk-en-co/2021/01/1-5/8499km/39125711</link>
 
-        <!-- google productcategorie: Verplicht, de waarde kan worden vastgezet op 916 aangezien dit een breed scala aan voertuigtypen dekt -->
+        <!-- google_productcategorie: Verplicht, de waarde kan worden vastgezet op 916 aangezien dit een breed scala aan voertuigtypen dekt -->
         <google_productcategorie>916</google_productcategorie>
 
         <!-- merk: Verplicht -->
@@ -56,7 +56,7 @@
             <store_code>11279812714946237556</store_code>
         </vehicle_fulfillment>
 
-        <!-- linktemplate: Verplicht voor in-store en ship-to-store aanbiedingen. Moet de {store_code} ValueTrack parameter bevatten, welke vast moet staan aan het einde van elke URL -->
+        <!-- linksjabloon: Verplicht voor in-store en ship-to-store aanbiedingen. Moet de {store_code} ValueTrack parameter bevatten, welke vast moet staan aan het einde van elke URL -->
         <linksjabloon>https://www.experiencestoredoesburg.nl/gebruikt/lynk-en-co/2021/01/1-5/8499km/39125711?store={store_code}</linksjabloon>
     </item>
 

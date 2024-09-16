@@ -5,80 +5,82 @@
     <link>https://www.experiencestoredoesburg.nl/</link>
     <description>Vehicle listings feed for Google Merchant Center</description>
 
-    <!-- Instruction: Currently, this feed contains only one vehicle. To include additional vehicles, 
-         add more <item> elements below with the same required fields (g:id, g:price, g:condition, etc.) for each new vehicle. -->
+    <!-- # website: Google geeft in de websitevereisten aan dat de beschikbaarheid duidelijk zichtbaar moet zijn op de landingspagina (VDP). Dit kan worden bereikt door bijvoorbeeld een extra veld toe te voegen met de titel "Beschikbaarheid" en de volgende mogelijke waarden: "Beschikbaar" (alleen voertuigen met deze status mogen in de feed worden opgenomen), "Verkocht", "Niet op voorraad", "Gereserveerd", "Niet beschikbaar" of "Binnenkort beschikbaar". -->
+    
+    <!-- Instructie: Deze feed bevat momenteel slechts één voertuig. Om meer voertuigen toe te voegen, 
+         voeg meer <item> elementen toe met dezelfde verplichte velden (g:id, g:prijs, g:conditie, etc.) voor elk nieuw voertuig. -->
     
     <item>
-        <!-- id: Required and must be visible on the landing page, in metadata or in URL -->
+        <!-- id: Verplicht en moet zichtbaar zijn op de landingspagina, in metadata of in de URL -->
         <g:id>40109258</g:id>
 
-        <!-- title: Optional -->
-        <g:title>Lynk & Co 01 1.5 De Perfecte Mix van Stijl, Innovatie en Efficiëntie</g:title>
+        <!-- titel: Optioneel -->
+        <g:titel>Lynk & Co 01 1.5 De Perfecte Mix van Stijl, Innovatie en Efficiëntie</g:titel>
 
-        <!-- price: Required, format: number.currency (e.g., 27000.00 EUR) without thousand separators, price must match with price on VDP -->
-        <g:price>27000.00 EUR</g:price>
+        <!-- prijs: Verplicht, formaat: nummer.valuta (bijv. 27000.00 EUR) zonder duizendtallen, prijs moet overeenkomen met prijs op de VDP -->
+        <g:prijs>27000.00 EUR</g:prijs>
 
-        <!-- condition: Required, values can be new or used -->
-        <g:condition>used</g:condition>
+        <!-- conditie: Verplicht, waarden kunnen "nieuw" of "gebruikt" zijn -->
+        <g:conditie>gebruikt</g:conditie>
 
-        <!-- image_link: Required, no watermarks, no superimposed logos or text, no placeholder images, no offensive content, full product view, minimal background clutter -->
-        <g:image_link>https://subarustoredoesburg.ams3.cdn.digitaloceanspaces.com/40109258/16014897390-40109258-4.jpg</g:image_link>
+        <!-- afbeelding_link: Verplicht, geen watermerken, geen superimposed logo's of tekst, geen plaatsaanduidingen, geen aanstootgevend materiaal, volledig productzicht, minimale achtergrondverstoring -->
+        <g:afbeelding_link>https://subarustoredoesburg.ams3.cdn.digitaloceanspaces.com/40109258/16014897390-40109258-4.jpg</g:afbeelding_link>
 
-        <!-- link: Required for online offers. It provides the URL to the specific vehicle description page on your website -->
+        <!-- link: Verplicht voor online aanbiedingen. Dit geeft de URL naar de specifieke voertuigbeschrijvingspagina op uw website -->
         <g:link>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/</g:link>
 
-        <!-- google_product_category: Required, the value can be fixed at 916 since it covers a wide range of vehicle types -->
+        <!-- google_product_category: Verplicht, de waarde kan worden vastgezet op 916 aangezien dit een breed scala aan voertuigtypen dekt -->
         <g:google_product_category>916</g:google_product_category>
 
-        <!-- brand: Required -->
-        <g:brand>Lynk & Co</g:brand>
+        <!-- merk: Verplicht -->
+        <g:merk>Lynk & Co</g:merk>
 
-        <!-- model: Required -->
+        <!-- model: Verplicht -->
         <g:model>0.1</g:model>
 
-        <!-- trim: Required -->
+        <!-- trim: Verplicht, betreft de uitvoering van het voertuig, bijvoorbeeld GTI bij een Volkswagen Polo -->
         <g:trim>1.5</g:trim>
 
-        <!-- color: Required -->
-        <g:color>zwart</g:color>
+        <!-- kleur: Verplicht -->
+        <g:kleur>zwart</g:kleur>
 
-        <!-- mileage: Required, thousands comma-separated, with space km -->
-        <g:mileage>12,540 km</g:mileage>
+        <!-- kilometerstand: Verplicht, duizenden met komma's gescheiden, gevolgd door een spatie en "km" -->
+        <g:kilometerstand>12,540 km</g:kilometerstand>
 
-        <!-- date_first_registered: Required, in YYYY-MM format -->
-        <g:date_first_registered>2022-10</g:date_first_registered>
+        <!-- datum_eerste_registratie: Verplicht, in YYYY-MM formaat -->
+        <g:datum_eerste_registratie>2022-10</g:datum_eerste_registratie>
 
-        <!-- vehicle fulfillment: Required. The vehicle is only available at a single store. -->
-        <g:vehicle_fulfillment>
-            <g:option>in_store</g:option>
-            <g:store_code>11279812714946237556</g:store_code>
-        </g:vehicle_fulfillment>
+        <!-- voertuig_uitvoering: Verplicht. Het voertuig is alleen beschikbaar in een enkele winkel. -->
+        <g:voertuig_uitvoering>
+            <g:optie>in_store</g:optie>
+            <g:winkel_code>11279812714946237556</g:winkel_code>
+        </g:voertuig_uitvoering>
 
-        <!-- Instruction: Store code refers to the code from Google Business Profile, where it is labeled as "Shop code". 
-        If multiple locations are involved, this store_code can change because different cars can be located at different locations; 
-        otherwise, it remains fixed. -->
+        <!-- Instructie: Winkelcode verwijst naar de code uit Google Bedrijfsprofiel, waar het wordt aangeduid als "Winkelcode". 
+        Als meerdere locaties betrokken zijn, kan deze winkelcode wijzigen omdat verschillende auto's op verschillende locaties kunnen staan; 
+        anders blijft het vast. -->
 
-        <!-- Instruction: To add online availability, use the following structure: -->
+        <!-- Instructie: Om online beschikbaarheid toe te voegen, gebruik de volgende structuur: -->
         <!-- 
-        <g:vehicle_fulfillment>
-            <g:option>online</g:option>
-        </g:vehicle_fulfillment>
+        <g:voertuig_uitvoering>
+            <g:optie>online</g:optie>
+        </g:voertuig_uitvoering>
         -->
 
-        <!-- Instruction: To add multiple store locations, use the following structure: -->
+        <!-- Instructie: Om meerdere winkel locaties toe te voegen, gebruik de volgende structuur: -->
         <!-- 
-        <g:vehicle_fulfillment>
-            <g:option>in_store</g:option>
-            <g:store_code>1111</g:store_code>
-            <g:store_code>2222</g:store_code>
-        </g:vehicle_fulfillment>
+        <g:voertuig_uitvoering>
+            <g:optie>in_store</g:optie>
+            <g:winkel_code>1111</g:winkel_code>
+            <g:winkel_code>2222</g:winkel_code>
+        </g:voertuig_uitvoering>
         -->
 
-        <!-- link_template: Required for in-store and ship-to-store offers. Must include {store_code} ValueTrack parameter, which should be fixed at the end of every URL -->
-        <g:link_template>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/?store={store_code}</g:link_template>
+        <!-- link_template: Verplicht voor in-store en ship-to-store aanbiedingen. Moet de {winkel_code} ValueTrack parameter bevatten, welke vast moet staan aan het einde van elke URL -->
+        <g:link_template>https://www.experiencestoredoesburg.nl/voorraad/gebruikt/lynk-en-co/2022/01/1-5/35531km/40109258/?store={winkel_code}</g:link_template>
     </item>
 
-    <!-- Add more <item> elements here for additional vehicles -->
+    <!-- Voeg meer <item> elementen toe voor extra voertuigen -->
     
   </channel>
 </rss>
